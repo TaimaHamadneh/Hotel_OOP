@@ -79,18 +79,18 @@ class Hotel {
   
   }
   
-  // Create some Room objects
+  // Create three Room with different properties.
   const room1 = new Room(1, '101', 150);
   const room2 = new RoomWithView(1, '102', 200, false, 'city view', 2);
   const room3 = new SleepingRoom(2, '201', 100, false, 4);
   
-  // Put the Room objects into an array
+  // Put the Rooms into an array.
   const rooms = [room1, room2, room3];
   
-  // Create a Hotel object using the Room objects
+  // Create a Hotel object 
   const hotel = new Hotel('The Hilton Hotel', '401 Main St', 3, 1, 2, rooms);
   
-  // Call some methods on the Hotel and Room objects
+  // Call some of methods to test it.
   hotel.printAdvertisement();
   room2.book();
   room3.book();
